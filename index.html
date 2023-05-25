@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easeebuy - Your Ultimate Shopping Destination</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <!-- Login/Sign Up Page -->
+  <div id="login-signup-page">
+    <h1>Welcome to Easeebuy</h1>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Log In</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+    <!-- Wrap the HTML section in a container -->
+<div class="container">
+  <!-- Add search input and filter options to your HTML -->
+  <input type="text" id="searchInput" placeholder="Search...">
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+    <option value="home">Home</option>
+  </select>
+  <button id="searchButton">Search</button>
+
+  <!-- Display the filtered products -->
+  <div id="productList"></div>
+</div>
+
+
+  <!-- Product Detail Page -->
+  <div id="product-detail-page">
+    <h2>Smart Watch</h2>
+    <img src="smartwatch.avif" alt="Smart Watch">
+    <p>
+      <ol>
+        <li>The smartwatch offers advanced features and functionality, including fitness tracking, notifications, and customizable watch faces, to enhance your daily life.</li>
+        <li>Stay connected on the go with the smartwatch's ability to make calls, send messages, and access your favorite apps directly from your wrist.</li>
+      </ol>
+    </p>
+    <p>Price: $199.99</p>
+    <button onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- Cart Page -->
+  <div id="cart-page">
+    <h2>Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+  <!-- Product Listing Page -->
+  <div id="product-listing-page">
+    <h2>Product Listing</h2>
+    <input type="text" placeholder="Search">
+    <select>
+      <option value="">Filter by Category</option>
+      <option value="smartwatch">Smart Watches</option>
+      <option value="phone">Phones</option>
+    </select>
+    <ul id="product-list">
+      <!-- Product list will be dynamically added here -->
+    </ul>
+  </div>
+
+  <!-- Ratings and Reviews -->
+  <div id="ratings-reviews">
+    <h2>Product Ratings and Reviews</h2>
+    <div class="rating">
+      <h3>Overall Rating: 4.5</h3>
+      <p>Based on 100 reviews</p>
+    </div>
+    <ul id="reviews">
+      <!-- Reviews will be dynamically added here -->
+    </ul>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Write your review" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Recommendations -->
+  <div id="recommendations">
+    <h2>Recommended Products</h2>
+    <ul>
+      <!-- Recommended products will be dynamically added here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
